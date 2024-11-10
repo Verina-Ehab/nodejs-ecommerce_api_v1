@@ -1,0 +1,43 @@
+#############The Node.js Process#############
+
+Global Object: This refers to a special object named process that provides information
+about the current Node.js process running your code. It's a core part of Node.js and offers functionalities like:
+
+    process.argv: An array containing command-line arguments passed to your Node.js script.
+
+    process.env: An object containing environment variables.
+
+    process.cwd: The current working directory of the process.
+
+    process.exit: A function to terminate the Node.js process.
+
+    process.stdin, process.stdout, process.stderr: Streams for standard input, standard output, and standard error.
+
+    process.nextTick: A way to schedule tasks to run after the current operation stack is cleared.
+
+    process.memoryUsage: Information about the memory usage of the process.
+
+    Example:
+
+    console.log('Command Line Arguments:', process.argv); 
+    console.log('Environment Variables:', process.env); 
+    console.log('Current Working Directory:', process.cwd());
+
+
+
+
+#############dotenv#############
+
+Environment Variable Management: dotenv is a simple and popular Node.
+js package that lets you load environment variables from a .env file into your Node.
+js project's environment. This is crucial for managing sensitive information, configurations, 
+and project settings.
+
+.env File: The .env file is a plain text file that stores your environment variables in a key-value format. 
+For example:
+
+PORT=3000
+DATABASE_URL=mongodb://localhost:27017/mydatabase
+API_KEY=your_secret_api_key
+
+
